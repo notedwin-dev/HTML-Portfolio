@@ -3,49 +3,58 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        <meta name="description" content="Discord bot developer and Musician"> <!-- This line is for your website's description -->
+        <meta property="og:site_name" content="NotEdwin"> <!-- This is what appears as your website name when it is embedded in Discord -->
+        <meta property="og:type" content="website"> 
+        <meta property="og:title" content="NotEdwin" /> <!-- This is what appears as your website title when it is embedded in Discord -->
+        <meta property="og:description" content="Discord bot developer and Musician" /> <!-- This is what appears as your website description when it is embedded in Discord -->
+        <meta property="og:url" content="https://notedwin.api.stdlib.com/portfolio-using-html-in-autocode@dev/" /> <!-- This is your website url when it is embedded in Discord -->
+        <meta property="og:image" content="https://cdn.discordapp.com/attachments/883205288520466503/894504838245777428/new_logo.png" /> <!-- This is what appears as your thumbnail when it is embedded in Discord -->
         <!-- ===== CSS ===== -->
-        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/styles.css"> <!-- Import the stylesheet from css -->
+        
+        <!-- ===== FAVICON ===== -->
+        <link rel="shortcut icon" href="assets/img/favicon.png"> <!-- Import the small little icon for your website tab -->
 
         <!-- ===== BOX ICONS ===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css' rel='stylesheet'> <!-- Import all the available social media icons from this website for styling -->
 
-        <title>NotEdwin Music</title>
+        <title>NotEdwin</title> <!-- Main title of your tab -->
     </head>
     <body>
         <!--===== HEADER =====-->
         <header class="l-header">
             <nav class="nav bd-grid">
                 <div>
-                    <a href="#" class="nav__logo">NotEdwin</a>
+                    <a href="#" class="nav__logo">NotEdwin</a> <!-- This is where logo usually goes. You can change this to your image logo, it doesn't matter much:) -->
                 </div>
 
-                <div class="nav__menu" id="nav-menu">
+                <div class="nav__menu" id="nav-menu"> <!-- This is to create a divide section for navigation menu that can be seen as texts like Home | About... on Chrome for Desktop -->
                     <ul class="nav__list">
                         <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#dbd" class="nav__link">Discord Bot Development</a></li>
                         <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
                     </ul>
                 </div>
 
-                <div class="nav__toggle" id="nav-toggle">
+                <div class="nav__toggle" id="nav-toggle"> <!--This is to create a divide section for navigation menu that can be seen as a hamburger icon on mobile that can be expanded and closed -->
                     <i class='bx bx-menu'></i>
                 </div>
             </nav>
         </header>
 
-        <main class="l-main">
+        <main class="l-main"> <!-- This is to hold all the main contents -->
             <!--===== HOME =====-->
             <section class="home" id="home">
                 <div class="home__container bd-grid">
-                    <h2 class="home__title"><span>HELLO</span><br>:)</h2>
+                    <h2 class="home__title"><span>HELLO</span><br>:)</h2> <!-- This is the big big text you see on the website -->
 
-                    <div class="home__scroll">
+                    <div class="home__scroll"> <!-- Scrolls when you click on the scroll down text, animated with javascript>
                         <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Scroll down</a>
                     </div>
-
-                    <img src="assets/img/perfil.png" alt="" class="home__img">
+                    <img src="assets/img/perfil.png" alt="" class="home__img"> <!-- Main image you will see that appears next to the text. Feel free to change it to your own transparent png image:) -->
                 </div>
             </section>
             
@@ -55,45 +64,72 @@
 
                 <div class="about__container bd-grid">
                     <div class="about__img">
-                        <img src="assets/img/Me.png" alt="">
+                        <img src="assets/img/perfil.png" alt=""> <!-- Your own image -->
                     </div>
 
                     <div>
-                        <h2 class="about__subtitle">It's' NotEdwin</h2>
-                        <span class="about__profession">Bot Developer and Musician</span>
-                        <p class="about__text">
+                        <h2 class="about__subtitle">It's NotEdwin</h2> <!--You name or a nickname>
+                        <span class="about__profession">Bot Developer and Musician</span> <!-- Your job Title -->
+                        <p class="about__text"> <!-- A description of yourself -->
                             haiiii my name is Edwin! I'm a 17 years old Singer/Songwriter!
                             I wish that I could create music that will spread the positivity of mine no matter what kind of songs I'm singing🥰🤍
                             I like to work on my Discord Bot during my free time and help out the Autocode community! Nice to meet you UwU
                         </p>
 
                         <div class="about__social">
-                            <a href="https://www.youtube.com/channel/UC3m_fYk3II28l-hD7T8NZ-w" target="_blank" class="about__social-icon"><i class='bx bxl-youtube' ></i></a>
-                            <a href="https://open.spotify.com/artist/6732BSZ5w4CpNbwggCGzXq" target="_blank" class="about__social-icon"><i class='bx bxl-spotify' ></i></a>
-                            <a href="https://www.instagram.com/edwin.nggggggggg" target="_blank" class="about__social-icon"><i class='bx bxl-instagram' ></i></a>
+                            <a href="https://www.youtube.com/channel/UC3m_fYk3II28l-hD7T8NZ-w" target="_blank" class="about__social-icon"><i class='bx bxl-youtube' ></i></a> <!-- You can always change Youtube to other socials that you have, like Discord -->
+                            <a href="https://open.spotify.com/artist/6732BSZ5w4CpNbwggCGzXq" target="_blank" class="about__social-icon"><i class='bx bxl-spotify' ></i></a> <!-- You can always change Spotify to other socials that you have, like Facebook or Twitch -->
+                            <a href="https://www.instagram.com/edwin.nggggggggg" target="_blank" class="about__social-icon"><i class='bx bxl-instagram' ></i></a> <!-- You can always change Instagram to other socials that you have, like Linkedin or Twitter -->
                         </div>
                     </div>
                 </div>
             </section>
+            
+<!--===== DISCORD BOT =====-->
+            <section class="discord bot section" id="dbd">
+                <h2 class="section-title">Discord Bot Development</h2>
+            
+                <div class="dbd__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/Untitled-1.png" alt=""> <!-- Your own image -->
+                    </div>
+            
+                    <div>
+                        <h3 class="dbd__subtitle">Confused Notedwin</h3> <!--You name or a nickname>
+                        <span class="dbd__profession">Created by notedwin.music</span> <!-- Bot creator -->
+                        <p class="dbd__text"> <!-- A description of your bot -->
+                            Hey there! I am a bot created by Notedwin! I have a dashboard in case you haven't notice yet! Click the button below!
+                            I am a multi-purpose bot which provide memes, moderation tools and music commands! Feel free to invite me!
+                            My creator will be posting Discord Bot Tutorials on his Dev Channel soon! Subscribe so you won't miss the tutorials uwu~
+                        </p>
+            
+                        <div class="dbd__social">
+                            <a href="https://www.youtube.com/channel/UCL4zxBUM-m-5NL79joSnsdA" target="_blank" class="dbd__social-icon"><i class='bx bxl-youtube' ></i></a> <!-- You can always change Youtube to other socials that you have, like Discord -->
+                            <a href="https://notedwin.ga/bot-dashboard" target="_blank" class="dbd__social-icon"><i class='bx bxs-dashboard' style='color:#669fff'></i></a> <!-- You can always change Spotify to other socials that you have, like Facebook or Twitch -->
+                            <a href="https://www.instagram.com/edwin.nggggggggg" target="_blank" class="dbd__social-icon"><i class='bx bxl-discord-alt' ></i></a> <!-- You can always change Instagram to other socials that you have, like Linkedin or Twitter -->
+                        </div>
+                    </div>
+                </div>
+            </section>>
 
             <!--===== SKILLS =====-->
             <section class="skills section" id="skills">
                 <h2 class="section-title">Skills</h2>
 
                 <div class="skills__container bd-grid">
-                    <div class="skills__box">
-                        <h3 class="skills__subtitle">Development</h3>
-                        <span class="skills__name">HTML</span>
-                        <span class="skills__name">CSS</span>
-                        <span class="skills__name">JavaScript</span>
-                        <span class="skills__name">Unity</span>
-                        <span class="skills__name">Python</span>
-                        <span class="skills__name">C#</span>
+                    <div class="skills__box"> <!-- Creates a divide section for skills box where all your skills will be placed into grey boxes -->
+                        <h3 class="skills__subtitle">Development</h3> <!--name your skills-->
+                        <span class="skills__name">HTML</span> <!--name your skills-->
+                        <span class="skills__name">CSS</span> <!--name your skills-->
+                        <span class="skills__name">JavaScript</span> <!--name your skills-->
+                        <span class="skills__name">Unity</span> <!--name your skills-->
+                        <span class="skills__name">Python</span> <!--name your skills-->
+                        <span class="skills__name">C#</span> <!--name your skills-->
                         
-                        <h3 class="skills__subtitle">Design</h3>
-                        <span class="skills__name">Adobe Premiere Pro</span>
-                        <span class="skills__name">Adobe XD</span>
-                        <span class="skills__name">Adobe Photoshop</span>
+                        <h3 class="skills__subtitle">Design</h3> <!--name your skills-->
+                        <span class="skills__name">Adobe Premiere Pro</span> <!--name your skills-->
+                        <span class="skills__name">Adobe XD</span> <!--name your skills-->
+                        <span class="skills__name">Adobe Photoshop</span> <!--name your skills-->
                     </div>
 
                     <div class="skills__img">
@@ -101,52 +137,52 @@
                     </div>
                 </div>
             </section>
-
+            
             <!--===== PORTFOLIO =====-->
             <section class="portfolio section" id="portfolio">
-                <h2 class="section-title">Music And Originals</h2>
-
+                <h2 class="section-title">Portfolio</h2>
+            
                 <div class="portfolio__container bd-grid">
                     <div class="portfolio__img">
-                        <img src="assets/img/work1.jpg" alt="">
-
+                        <img src="assets/img/work1.jpg" alt=""> <!-- put your portfolio here -->
+            
                         <div class="portfolio__link">
-                            <a href="https://www.youtube.com/watch?v=ex98bsRIf-8" class="portfolio__link-name">View details</a>
+                            <a href="https://www.youtube.com/watch?v=ex98bsRIf-8" class="portfolio__link-name">View details</a> <!-- link them to your portfolio when they click on view details -->
                         </div>
                     </div>
                     <div class="portfolio__img">
-                        <img src="assets/img/work2.jpg" alt="">
-
+                        <img src="assets/img/work2.jpg" alt=""> <!-- put your portfolio here -->
+            
                         <div class="portfolio__link">
-                            <a href="https://www.youtube.com/watch?v=vwOUtgzU4cg" class="portfolio__link-name">View details</a>
+                            <a href="https://www.youtube.com/watch?v=vwOUtgzU4cg" class="portfolio__link-name">View details</a> <!-- link them to your portfolio when they click on view details -->
                         </div>
                     </div>
                     <div class="portfolio__img">
-                        <img src="assets/img/work3.jpg" alt="">
-
+                        <img src="assets/img/work3.jpg" alt=""> <!-- put your portfolio here -->
+            
                         <div class="portfolio__link">
-                            <a href="https://www.youtube.com/watch?v=zYcCAwY5Bx8" class="portfolio__link-name">View details</a>
+                            <a href="https://www.youtube.com/watch?v=zYcCAwY5Bx8" class="portfolio__link-name">View details</a> <!-- link them to your portfolio when they click on view details -->
                         </div>
                     </div>
                     <div class="portfolio__img">
-                        <img src="assets/img/work4.png" alt="">
-
+                        <img src="assets/img/work4.png" alt=""> <!-- put your portfolio here -->
+            
                         <div class="portfolio__link">
-                            <a href="https://www.youtube.com/watch?v=FGipNhiUf1E" class="portfolio__link-name">View details</a>
+                            <a href="https://www.youtube.com/watch?v=FGipNhiUf1E" class="portfolio__link-name">View details</a> <!-- link them to your portfolio when they click on view details -->
                         </div>
                     </div>
                     <div class="portfolio__img">
-                        <img src="assets/img/work5.png" alt="">
-
+                        <img src="assets/img/work5.png" alt=""> <!-- put your portfolio here -->
+            
                         <div class="portfolio__link">
-                            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="portfolio__link-name">View details</a>
+                            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="portfolio__link-name">View details</a> <!-- link them to your portfolio when they click on view details -->
                         </div>
                     </div>
                     <div class="portfolio__img">
-                        <img src="assets/img/work6.jpg" alt="">
-
+                        <img src="assets/img/work6.jpg" alt=""> <!-- put your portfolio here -->
+            
                         <div class="portfolio__link">
-                            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="portfolio__link-name">View details</a>
+                            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="portfolio__link-name">View details</a> <!-- link them to your portfolio when they click on view details -->
                         </div>
                     </div>
                 </div>
@@ -158,24 +194,25 @@
             <div class="footer__container bd-grid">
                 <div class="footer__data">
                     <h2 class="footer__title">NOTEDWIN</h2>
-                    <p class="footer__text">My name is NotEdwin and this is my Website Landing Page!</p>
+                    <p class="footer__text">My name is NotEdwin and this is my Website Landing Page!</p> <!-- It doesn't matter, you can always modify this part or just remove it completely:) -->
                 </div>
 
                 <div class="footer__data">
-                    <h2 class="footer__title">EXPLORE</h2>
+                    <h2 class="footer__title">EXPLORE</h2> <!-- This is in the Footer so that people can navigate to different pages they wanna know more about -->
                     <ul>
                         <li><a href="#home" class="footer__link">Home</a></li>
                         <li><a href="#about" class="footer__link">About</a></li>
+                        <li><a href="#dbd" class="footer__link">Discord Bot Development</a></li>
                         <li><a href="#skills" class="footer__link">Skills</a></li>
                         <li><a href="#portfolio" class="footer__link">Portfolio</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer__data">
-                    <h2 class="footer__title">FOLLOW</h2>
-                    <a href="#" class="footer__social"><i class='bx bxl-youtube' ></i></a>
-                    <a href="https://www.youtube.com/channel/UC3m_fYk3II28l-hD7T8NZ-w" class="footer__social"><i class='bx bxl-spotify' ></i></a>
-                    <a href="https://www.instagram.com/edwin.nggggggggg" class="footer__social"><i class='bx bxl-instagram' ></i></a>
+                    <h2 class="footer__title">FOLLOW</h2> <!-- This is not necessary but you will see it in the footer, this is normally used by support websites to put their email and contacts in case you wanna contact them:) -->
+                    <a href="#" class="footer__social"><i class='bx bxl-youtube' ></i></a> <!-- You can always change Youtube to other socials that you have, like Discord -->
+                    <a href="https://www.youtube.com/channel/UC3m_fYk3II28l-hD7T8NZ-w" class="footer__social"><i class='bx bxl-spotify' ></i></a> <!-- You can always change Spotify to other socials that you have, like Facebook or Twitch -->
+                    <a href="https://www.instagram.com/edwin.nggggggggg" class="footer__social"><i class='bx bxl-instagram' ></i></a> <!-- You can always change Instagram to other socials that you have, like Linkedin or Twitter-->
                 </div>
 
 
@@ -183,9 +220,9 @@
         </footer>
 
         <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://unpkg.com/scrollreveal"></script> <!-- This is the Scroll Reveal I used as a script for revealing the content while you scroll:) -->
 
         <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
+        <script src="assets/js/main.js"></script> <!-- This is where I created all the animations:) -->
     </body>
 </html>
