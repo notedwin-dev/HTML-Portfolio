@@ -248,7 +248,7 @@ img{
     color: var(--first-color);
 }
 
-/* ===== ABOUT =====*/
+/* ===== DBD =====*/
 .dbd__container{
     justify-items: center;
     row-gap: 2rem;
@@ -438,6 +438,20 @@ img{
     .about__img img{
         width: 165px;
     }
+    
+    .dbd__container{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        text-align: initial;
+        padding: 4rem 0;
+    }
+    .dbd__img{
+        width: 200px;
+        height: 200px;
+    }
+    .dbd__img img{
+        width: 165px;
+    }
 
     .skills__container{
         grid-template-columns: repeat(2, 1fr);
@@ -448,14 +462,6 @@ img{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
         column-gap: 2rem;
-    }
-
-    .contact__container{
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
-    }
-    .contact__form{
-        width: 380px;
     }
 
     .footer__container{
