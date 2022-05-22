@@ -219,6 +219,7 @@ img{
 .about__img{
     width: 1080px;
     height: 1080px;
+    float: left;
 }
 .about__img img{
     width: 100px;
@@ -227,17 +228,21 @@ img{
     font-size: var(--h2-font-size);
     color: var(--first-color);
     margin-bottom: var(--mb-1);
+    float: right;
 }
 .about__text{
     margin-bottom: var(--mb-4);
+    float: right;
 }
 .about__profession{
     display: block;
     margin-bottom: var(--mb-4);
+    float: right;
 }
 .about__social-icon{
     font-size: 1.4rem;
     margin: 0 var(--mb-1);
+    float: right;
 }
 .about__social-icon:hover{
     color: var(--first-color);
