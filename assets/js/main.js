@@ -61,6 +61,13 @@ sr.reveal('.about__profession', {delay: 400})
 sr.reveal('.about__text', {delay: 500})
 sr.reveal('.about__social-icon', {delay: 600, interval: 200})
 
+/*SCROLL ABOUT*/
+sr.reveal('.dbd__img', {delay: 500})
+sr.reveal('.dbd__subtitle', {delay: 300})
+sr.reveal('.dbd__profession', {delay: 400})
+sr.reveal('.dbd__text', {delay: 500})
+sr.reveal('.dbd__social-icon', {delay: 600, interval: 200})
+
 /*SCROLL SKILLS*/
 sr.reveal('.skills__subtitle', {})
 sr.reveal('.skills__name', {distance: '20px', delay: 50, interval: 100})
@@ -74,7 +81,5 @@ sr.reveal('.contact__subtitle', {})
 sr.reveal('.contact__text', {interval: 200})
 sr.reveal('.contact__input', {delay: 400})
 sr.reveal('.contact__button', {delay: 600})
-
-
 
 
