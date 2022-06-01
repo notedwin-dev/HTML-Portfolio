@@ -416,7 +416,7 @@ img {
 
 .footer__social {
     font-size: 1.4rem;
-    margin-right: var(--mb-1);
+    margin-right: 0.3rem;
     font-size: var(--normal-font-size);
     color: var(--footer-text-color);
     margin-bottom: var(--mb-2)
