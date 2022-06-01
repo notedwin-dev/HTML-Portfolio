@@ -72,9 +72,9 @@ a {
 }
 
 img {
-    max-width: 246px;
+    max-width: auto;
     height: auto;
-    display: flex;
+    display: flex
 }
 
 .section {
@@ -303,13 +303,14 @@ img {
 .portfolio__img {
     position: relative;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     overflow: hidden;
-    display: flex;
+    display: flex
 }
 
 .portfolio__img img {
-    border-radius: .5rem
+    border-radius: .5rem;
+    max-width: 246px;
 }
 
 .portfolio__link {
@@ -328,7 +329,7 @@ img {
 }
 
 .portfolio__img:hover .portfolio__link {
-    bottom: 0;
+    bottom: 0
 }
 
 .portfolio__link-name {
@@ -396,12 +397,14 @@ img {
     .home__img {
         width:230px
     }
+
     .about__img {
-        width:120px;
-        height:120px;
+        width: 120px;
+        height: 120px
     }
-    .about__img img{
-        width:120px;
+
+    .about__img img {
+        width: 120px
     }
 }
 
