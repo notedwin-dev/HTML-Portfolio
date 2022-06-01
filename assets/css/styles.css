@@ -9,10 +9,11 @@
 
 /*===== Colores =====*/
 :root{
-    --first-color: #5361FF;
+    --first-color: #ff5370;
     --white-color: #FAFAFF;
     --dark-color: #2A3B47;
-    --text-color: #697477;
+    --text-color: #8d588c;
+    --footer-text-color: #b7caf5;
 }
 
 /*===== Fuente y tipografia =====*/
@@ -219,11 +220,12 @@ img{
 .about__img{
     display: flex;
     justify-content: center;
-    width: 120px;
-    height: 120px;
-    background-color: var(--first-color);
+    width: 1200px;
+    height: 1200px;
     border-radius: 50%;
+    border: 5px solid gainsboro;
     overflow: hidden;
+    background: none !important;
 }
 .about__img img{
     width: 100px;
@@ -321,36 +323,14 @@ img{
     display: inline-block;
     margin-bottom: var(--mb-2);
 }
-.contact__inputs{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 1rem;
-}
-.contact__input{
-    width: 100%;
-    padding: .8rem;
-    outline: none;
-    border: 1.5px solid var(--dark-color);
-    font-size: var(--normal-font-size);
-    margin-bottom: var(--mb-4);
-    border-radius: .5rem;
-}
-.contact__button{
-    display: block;
-    background-color: var(--first-color);
-    color: var(--white-color);
-    padding: .75rem 2.5rem;
-    margin-left: auto;
-    border-radius: .5rem;
-    border: none;
-    outline: none;
-    font-size: var(--normal-font-size);
-    cursor: pointer;
-}
-
 /* ===== FOOTER=====*/
 .footer{
     background-color: var(--dark-color);
+}
+.footer__text{
+    font-size: var(--normal-font-size);
+    color: var(--footer-text-color);
+    margin-bottom: var(--mb-2);
 }
 .footer__container{
     row-gap: 2rem;
@@ -362,6 +342,9 @@ img{
 }
 .footer__link{
     padding: .25rem 0;
+    font-size: var(--normal-font-size);
+    color: var(--footer-text-color);
+    margin-bottom: var(--mb-2);
 }
 .footer__link:hover{
     color: var(--first-color);
@@ -369,6 +352,9 @@ img{
 .footer__social{
     font-size: 1.4rem;
     margin-right: var(--mb-1);
+    font-size: var(--normal-font-size);
+    color: var(--footer-text-color);
+    margin-bottom: var(--mb-2);
 }
 .footer__social:hover{
     color: var(--first-color);
@@ -453,14 +439,6 @@ img{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
         column-gap: 2rem;
-    }
-
-    .contact__container{
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
-    }
-    .contact__form{
-        width: 380px;
     }
 
     .footer__container{
