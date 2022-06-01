@@ -220,15 +220,15 @@ img{
 .about__img{
     display: flex;
     justify-content: center;
-    width: 1200px;
-    height: 1200px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     border: 5px solid gainsboro;
     overflow: hidden;
     background: none !important;
 }
 .about__img img{
-    width: 100px;
+    width: 120px;
 }
 .about__subtitle{
     font-size: var(--h2-font-size);
