@@ -72,9 +72,9 @@ a {
 }
 
 img {
-    max-width: 100%;
+    max-width: 246px;
     height: auto;
-    display: block;
+    display: flex;
 }
 
 .section {
@@ -302,7 +302,10 @@ img {
 
 .portfolio__img {
     position: relative;
-    overflow: hidden
+    justify-content: center;
+    align-items:center;
+    overflow: hidden;
+    display: flex;
 }
 
 .portfolio__img img {
@@ -325,7 +328,7 @@ img {
 }
 
 .portfolio__img:hover .portfolio__link {
-    bottom: 0
+    bottom: 0;
 }
 
 .portfolio__link-name {
