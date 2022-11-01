@@ -463,7 +463,7 @@ img {
     }
 }
 
-@media (max-height:882px) and (max-width:767px) {
+@media screen and (max-width:767px) {
     .long__link {
         bottom: -9rem;
     }
