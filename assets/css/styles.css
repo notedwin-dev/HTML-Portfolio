@@ -1,4 +1,6 @@
-@import "https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap";:root {
+@import "https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap";
+
+:root {
     --header-height: 3rem;
     --font-medium: 500
 }
@@ -39,7 +41,9 @@
     --z-fixed: 100
 }
 
-*,::before,::after {
+*,
+::before,
+::after {
     box-sizing: border-box
 }
 
@@ -56,7 +60,9 @@ body {
     line-height: 1.6
 }
 
-h1,h2,p {
+h1,
+h2,
+p {
     margin: 0
 }
 
@@ -127,30 +133,30 @@ img {
     align-items: center
 }
 
-.main .content{
+.main .content {
     max-width: 800px;
-  }
-  
-  .main .content h2{
+}
+
+.main .content h2 {
     color: #fff;
     font-size: 2em;
     font-weight: 500;
-  }
-  
-  .main .content h2 span{
+}
+
+.main .content h2 span {
     font-size: 2.8em;
     font-weight: 600;
-  }
+}
 
 @media screen and (max-width: 768px) {
     .nav__menu {
-        position:fixed;
+        position: fixed;
         top: var(--header-height);
         right: -100%;
         width: 80%;
         height: 100%;
         padding: 2rem;
-        background-color: rgba(255,255,255,.3);
+        background-color: rgba(255, 255, 255, .3);
         transition: .5s;
         backdrop-filter: blur(10px)
     }
@@ -212,7 +218,7 @@ img {
 }
 
 .home__title span {
-    text-shadow: 0 20px 25px rgba(0,0,0,.5)
+    text-shadow: 0 20px 25px rgba(0, 0, 0, .5)
 }
 
 .home__scroll {
@@ -247,7 +253,7 @@ img {
     border-radius: 50%;
     border: 5px solid #dcdcdc;
     overflow: hidden;
-    background: 0 0!important
+    background: 0 0 !important
 }
 
 .about__img img {
@@ -335,6 +341,7 @@ img {
     border-radius: .5rem;
     max-width: 246px;
 }
+
 .long__img img {
     border-radius: .5rem;
     max-width: 246px;
@@ -348,7 +355,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255,255,255,.3);
+    background-color: rgba(255, 255, 255, .3);
     border-radius: .5rem;
     cursor: pointer;
     backdrop-filter: blur(10px);
@@ -363,7 +370,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255,255,255,.3);
+    background-color: rgba(255, 255, 255, .3);
     border-radius: .5rem;
     cursor: pointer;
     backdrop-filter: blur(10px);
@@ -443,7 +450,7 @@ img {
 
 @media screen and (max-width: 320px) {
     .home__img {
-        width:230px
+        width: 230px
     }
 
     .about__img {
@@ -456,9 +463,15 @@ img {
     }
 }
 
+@media (height:882px) and (width:767px) {
+    .long__link {
+        bottom: 2rem;
+    }
+}
+
 @media screen and (min-width: 768px) {
     body {
-        margin:0
+        margin: 0
     }
 
     .section {
@@ -515,7 +528,7 @@ img {
     }
 
     .about__container {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         align-items: center;
         text-align: initial;
         padding: 4rem 0
@@ -531,32 +544,32 @@ img {
     }
 
     .skills__container {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         align-items: center
     }
 
     .portfolio__container {
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         column-gap: 2rem
     }
 
     .footer__container {
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
         justify-items: center
     }
 }
 
 @media screen and (min-width: 1024px) {
     .bd-grid {
-        margin-left:auto;
+        margin-left: auto;
         margin-right: auto
     }
 }
 
 @media screen and (min-height: 721px) {
     .home__container {
-        height:640px
+        height: 640px
     }
 
     .home__img {
