@@ -463,9 +463,14 @@ img {
     }
 }
 
-@media (height:882px) and (width:767px) {
+@media (max-height:882px) and (max-width:767px) {
     .long__link {
-        bottom: 2rem;
+        bottom: -9rem;
+    }
+
+    .long__img:hover .long__link {
+        bottom: 0rem;
+        width: 246px;
     }
 }
 
