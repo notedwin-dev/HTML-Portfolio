@@ -9,48 +9,22 @@
         body {
             text-align: center;
         }
-
-        .bg-image {
-            /* The image used */
-            background-image: url("assets/img/bg.png");
-
-            /* Add the blur effect */
-            filter: blur(8px);
-            -webkit-filter: blur(8px);
-
-            /* Full height */
-            height: 100%;
-
-            /* Center and scale the image nicely */
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
     </style>
 </head>
 
 <body>
-    <main class="bg-image">
-        <h1>憨憨温 · 抒情 [LOVE]</h1>
-        <div class="loveSongName"></div>
+    <script src="https://cdn.jsdelivr.net/npm/react@17.0.2/umd/react.development.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-dom@17.0.2/umd/react-dom.development.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/babel-standalone@7.14.0/babel.min.js"></script>
+    <div id="root"></div>
+    <script type="text/babel">
+        // Import your songlist component
+        import { songlist } from 'songlist.jsx';
 
-        <br>
+        // Render the songlist component into the 'root' element
+        ReactDOM.render(<songlist />, document.getElementById('root'));
+    </script>
 
-        <h1>憨憨温 · 饶舌 [RAP]</h1>
-        <div class="rapSongName"></div>
-
-        <br>
-
-        <h1>憨憨温 · 悲歌 [SAD]</h1>
-        <div class="sadSongName"></div>
-
-        <br>
-
-        <h1>憨憨温 · 嗨歌 [CLUB]</h1>
-        <div class="sadSongName"></div>
-
-        <br>
-    </main>
 </body>
 
 </html>
