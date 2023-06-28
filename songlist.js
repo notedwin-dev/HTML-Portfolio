@@ -1,6 +1,4 @@
-import React from 'react'
-
-export const songlist = () => {
+export default function songlist() {
     let sadSongs = [
         "其实", "不爱我", "把你揉碎捏成苹果", ""
     ]
