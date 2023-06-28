@@ -8,13 +8,29 @@
     <style>
         body {
             text-align: center;
+        }
 
+        .bg-image {
+            /* The image used */
+            background-image: url("assets/img/bg.png");
+
+            /* Add the blur effect */
+            filter: blur(8px);
+            -webkit-filter: blur(8px);
+
+            /* Full height */
+            height: 100%;
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
     </style>
 </head>
 
 <body>
-    <main>
+    <main class="bg-image">
         <h1>憨憨温 · 抒情 [LOVE]</h1>
         <div class="loveSongName"></div>
 
